@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
 
 
-    <title>핵심 쏙쏙 AWS</title>
+    <title>스파르타코딩클럽 | 나홀로 메모장</title>
 
     <!-- style -->
     <style type="text/css">
@@ -49,17 +49,7 @@
     </style>
     <script>
         function save() {
-            var form_data = new FormData($('#upload-file')[0]);
-            $.ajax({
-                type: 'POST',
-                url: '/fileupload',
-                data: form_data,
-                processData: false,
-                contentType: false,
-                success: function (data) {
-                    alert("파일이 업로드 되었습니다!!");
-                },
-            });
+            alert("파일이 업로드 되었습니다!!");
         }
     </script>
 
@@ -147,4 +137,5 @@
     </div>
 </div>
 </body>
+
 </html>
