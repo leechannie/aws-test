@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
 
 
-    <title>스파르타코딩클럽 | 나홀로 메모장 </title>
+    <title>핵심 쏙쏙 AWS</title>
 
     <!-- style -->
     <style type="text/css">
@@ -52,7 +52,7 @@
             var form_data = new FormData($('#upload-file')[0]);
             $.ajax({
                 type: 'POST',
-                url: 'http://pythonapp-env.eba-aaczzvwm.ap-northeast-2.elasticbeanstalk.com/fileupload',
+                url: '/fileupload',
                 data: form_data,
                 processData: false,
                 contentType: false,
