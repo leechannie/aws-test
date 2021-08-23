@@ -21,11 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
 
 
-<<<<<<< HEAD
-    <title>스파르타코딩클럽 | 나홀로 메모장</title>
-=======
     <title>스파르타코딩클럽 | 나홀로 메모장111</title>
->>>>>>> 백엔드 RDS 연동
 
     <!-- style -->
     <style type="text/css">
@@ -57,13 +53,10 @@
         })
 
         function save() {
-<<<<<<< HEAD
-            alert("파일이 업로드 되었습니다!!");
-=======
             var form_data = new FormData($('#upload-file')[0]);
             $.ajax({
                 type: 'POST',
-                url: '{EB URL}/fileupload',
+                url: 'http://pythonapp-env.eba-aaczzvwm.ap-northeast-2.elasticbeanstalk.com/fileupload',
                 data: form_data,
                 processData: false,
                 contentType: false,
@@ -72,13 +65,12 @@
                     location.reload();
                 },
             });
->>>>>>> 백엔드 RDS 연동
         }
 
         function getFiles() {
             $.ajax({
                 type: 'GET',
-                url: '{EB URL}/files',
+                url: 'http://pythonapp-env.eba-aaczzvwm.ap-northeast-2.elasticbeanstalk.com/files',
                 success: function (data) {
                     for(let i = 0 ; i < data['files'].length ; i++){
                         makeCard(data['files'][i]);
@@ -125,8 +117,4 @@
 </div>
 </body>
 
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 백엔드 RDS 연동
