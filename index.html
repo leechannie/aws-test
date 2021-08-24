@@ -49,7 +49,6 @@
     </style>
     <script>
         $(document).ready(function(){
-            alert('확인')
             getFiles();
         })
 
@@ -74,7 +73,6 @@
                 url: 'http://pythonapp-env.eba-aaczzvwm.ap-northeast-2.elasticbeanstalk.com/files',
                 success: function (data) {
                     for(let i = 0 ; i < data['files'].length ; i++){
-                        alert('d');
                         makeCard(data['files'][i]);
                     }
                 },
@@ -85,7 +83,7 @@
             let card = ` <div class="card">
                                 <div>
                                     <img class="card-img-top"
-                                         src="https://d2lh93khlvm1md.cloudfront.net/${data}"
+                                         src="http://d2lh93khlvm1md.cloudfront.net/${data}"
                                          alt="Card image cap">
                                     <p class="card-text comment">${data}</p>
                                 </div>
