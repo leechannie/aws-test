@@ -70,12 +70,12 @@
             }
 
         function getFiles() {
-            alert('d');
             $.ajax({
                 type: 'GET',
                 url: 'http://pythonapp-env.eba-aaczzvwm.ap-northeast-2.elasticbeanstalk.com/files',
                 success: function (data) {
                     for(let i = 0 ; i < data['files'].length ; i++){
+                        alert('d');
                         makeCard(data['files'][i]);
                     }
                 },
