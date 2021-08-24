@@ -50,6 +50,7 @@
     </style>
     <script>
         $(document).ready(function(){
+            alert('확인')
             getFiles();
         })
 
@@ -57,7 +58,7 @@
                 var form_data = new FormData($('#upload-file')[0]);
                 $.ajax({
                     type: 'POST',
-                    url: 'https://d2lh93khlvm1md.cloudfront.net/fileupload',
+                    url: 'http://pythonapp-env.eba-aaczzvwm.ap-northeast-2.elasticbeanstalk.com/fileupload',
                     data: form_data,
                     processData: false,
                     contentType: false,
